@@ -5,11 +5,17 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
+import { BrandDirective } from './directives/brand.directive';
+import { HighlightDirective  } from './directives/hight-light.directive';
+import { AttrdirectiveDirective } from './directives/attrdirective.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    BrandDirective,
+    HighlightDirective,
+    AttrdirectiveDirective 
   ],
   imports: [
     BrowserModule,

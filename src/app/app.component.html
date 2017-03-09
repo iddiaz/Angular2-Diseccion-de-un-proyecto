@@ -1,5 +1,15 @@
-<h1>
-  {{title}}
-</h1>
-
+<h1>{{title}}</h1>
 <app-home></app-home>
+<p myHighlight="chocolate">Highlighted with color</p>
+<p [myHighlight]="color">Highlight me!</p>
+<p [myHighlight]="'orange'">Highlighted in orange</p>
+
+<h2>Atributo como directiva</h2>
+<h4>Selecciopnar un color</h4>
+<div>
+  <input type="radio" name="colors" value="" (click)="color='lightgreen'"> lightgreen
+  <input type="radio" name="colors" value="" (click)="color='yellow'"> yellow
+  <input type="radio" name="colors" value="" (click)="color='cyan'"> cyan
+</div>
+
+<p [myHighlight]="color">Soy del color que selecciones cuando te pones enciam y mi amigo el parrafo de arriba también</p>

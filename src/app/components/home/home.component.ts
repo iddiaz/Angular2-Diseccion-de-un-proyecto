@@ -3,10 +3,8 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-home',
   template: `
-    <h2>Organizar proyectos con Angular 2</h2>
-    <p>
-      home Works!
-    </p>
+    <h2 appBrand>Directivas y Eventos en DOM</h2>
+    <p appAttrdirective> Elemento personalizado a través de una directiva<p>
   `,
   styles: []
 })
